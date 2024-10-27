@@ -3,7 +3,7 @@ import skops.io as sio
 
 unknown_types = sio.get_untrusted_types(file="./Model/drug_pipeline.skops")
 print(unknown_types)
-sio.load("./Model/drug_pipeline.skops", trusted=unknown_types)
+pipe = sio.load("./Model/drug_pipeline.skops", trusted=unknown_types)
 
 
 def predict_drug(age, sex, blood_pressure, cholesterol, na_to_k_ratio):
