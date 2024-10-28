@@ -55,5 +55,5 @@ gr.Interface(
     title=title,
     description=description,
     article=article,
-    theme=gr.themes.Soft(),
-).launch()
+    theme=gr.themes.Citrus(),
+).launch(share=True, debug=True)
